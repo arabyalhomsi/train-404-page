@@ -1,0 +1,294 @@
+/*------------------------------------*\
+
+Template : 404 Train
+Version: 1.0
+Author:	Homsi3
+
+\*------------------------------------*/
+
+/**
+ *	General setting
+ *	Buttons
+ * 	Info
+ * 	SVG Train
+ * 	Footer
+ */
+
+/*------------------------------------*\
+
+
+/*------------------------------------*\
+    #GENERAL SETTING
+\*------------------------------------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	background-color: #ace0f8;
+
+	/* Global Font Family */
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #FFF;
+	margin: 0px !important;
+}
+
+p{
+	font-weight: 300;
+}
+
+.container {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	height: 100%;
+}
+
+.content-block {
+	margin-top: 40px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+
+.clearfix::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.search-input {
+	position: relative;
+	width: 400px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.search-input__input {
+	width: 100%;
+	box-sizing: border-box !important;
+	background-color: #F05D4D;
+	border: 2px solid #F05D4D;
+	text-align: left;
+	font-family: 'Exo', sans-serif;
+	padding: 15px 10px;
+	border-radius: 10px;
+    font-size: 18px;
+    color: #F05D4D;
+	transition: all 0.2s ease-out;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: #fff;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.search-input__icon {
+    position: absolute;
+    right: 10px;
+    top: 49%;
+    transform: translate(0,-50%);
+    color: #fff;
+    padding-right: 15px;
+	transition: all 0.2s ease-out;
+	width: 20px;
+}
+
+@media (max-width: 480px) {
+	.search-input {
+		width: 300px;
+	}
+}
+
+.search-input__input:focus {
+	background-color: #fff;
+	color: #F05D4D;
+}
+.search-input__input:focus ~ .search-input__icon {
+	color: #F05D4D;
+}
+
+/*------------------------------------*\
+    #INFO
+\*------------------------------------*/
+
+.container h1 {
+	font-family: 'Exo', sans-serif;
+	font-size: 110px;
+	color: #e14d41;
+}
+
+.properties-zero {
+	display: inline;
+	color: #f15e4a;
+}
+
+.page-not-found {
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px; 
+}
+
+.welcome-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #f05d4d;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.home-page-link {
+	display: inline;
+	color: #db3738;
+	text-decoration: none;
+}
+
+.home-page-link:hover {
+	text-decoration: underline;
+}
+
+
+/*------------------------------------*\
+    #SVG TRAIN
+\*------------------------------------*/
+
+#train-container {
+	
+}
+
+#train {
+	animation: moveTrain 7s 1 ease;
+	transform: translate(-63%,0);
+}
+
+@keyframes moveTrain {
+	0% {
+		transform: translate(200%,0); 	
+	}
+    100% {
+		transform: translate(-63%,0);
+    }
+}
+
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+footer {
+	width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	background-color: #fff;
+	text-align: center;
+}
+
+.social-media {
+	padding-top: 30px;
+}
+
+.social-media ul {
+	list-style-type: none;
+}
+
+.social-media ul li {
+	display: inline-block;
+	background-color: #f0f0f0;
+	margin: 2px;
+}
+
+.social-media ul li a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	color: #888888;
+	transition: all 0.2s ease-out;
+}
+
+.social-media ul li a i {
+	line-height: 41px;
+	font-size: 18px;
+}
+
+.social-media ul li a.facebook:hover {
+	background-color: #3b5998;
+	color: #fff;
+}
+
+.social-media ul li a.twitter:hover {
+	background-color: #1da1f2;
+	color: #fff;
+}
+
+.social-media ul li a.instagram:hover {
+	background-color: #3f729b;
+	color: #fff;
+}
+
+.social-media ul li a.google-plus:hover {
+	background-color: #d94a39;
+	color: #fff;
+}
+
+.social-media ul li a.pinterest:hover {
+	background-color: #cb2027;
+	color: #fff;
+}
+
+.social-media ul li a.linkedin:hover {
+	background-color: #71b2d0;
+	color: #fff;
+}
+
+.social-media ul li a.skype:hover {
+	background-color: #18b7f1;
+	color: #fff;
+}
+
+.social-media ul li a.rss:hover {
+	background-color: #fe9900;
+	color: #fff;
+}
+ 
+.copyright {
+	color: #888888;
+	font-family: 'Exo',sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+
+.link-homsi3 {
+	color: #141414;
+}
